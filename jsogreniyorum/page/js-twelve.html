@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/set.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Başlıksız Belge</title>
+</head>
+<div class="dropdwn">
+<nav>
+	<ul>
+    	<li><a href="../css.html">Css</a></li>
+        <li><a href="#">Tutorial <i class="fa fa-caret-down"></i> </a>
+        	<ul>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Asp.Net</a></li>
+            <li><a href="../index.html">JavaScript</a></li>
+            </ul>
+            </li>
+         <li><a href="#">Web Desing<i class="fa fa-caret-down"></i></a>
+         		<ul>
+                <li><a href="#">Front End</a></li>
+           		<li><a href="#">Back End</a></li>
+          		<li><a href="#">Others <i style="transform:rotate(-90deg);" class="fa fa-caret-down"></i> </a>
+                <ul>
+                	<li><a href="#">Links</a></li>
+           			<li><a href="#">Works</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+                </li>
+            </ul>    
+         </li> 
+         	<li><a href="#">Content</a></li>
+           	<li><a href="#">FeedBack</a></li>
+   </ul>
+   
+    </nav>
+</div>
+
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
+  <h3 class="w3-bar-item">JavaScript</h3>
+  <a href="js-one.html" class="w3-bar-item w3-button">JavaScript'e Giris</a>
+   <a href="js-two.html" class="w3-bar-item w3-button">JavaScript Syntax Yapısı</a>
+    <a href="js-three.html" class="w3-bar-item w3-button">Değişkenler</a>
+     <a href="js-four.html" class="w3-bar-item w3-button">Operatörler</a>
+       <a href="js-five.html" class="w3-bar-item w3-button">Veri Tipleri</a>
+        <a href="js-six.html" class="w3-bar-item w3-button">Fonksiyon Yapısı</a>
+         <a href="js-seven.html" class="w3-bar-item w3-button">Olaylar</a>
+          <a href="js-eight.html" class="w3-bar-item w3-button">Koşul Yapısı</a>
+       <a href="js-nine.html" class="w3-bar-item w3-button">Döngüler</a>
+        <a href="js-ten.html" class="w3-bar-item w3-button">Tip Dönüşümleri</a>
+         <a href="js-eleven.html" class="w3-bar-item w3-button">Çalışma Yapısı ve Mimari</a>    
+  <a href="js-twelve.html" class="w3-bar-item w3-button">Fonksiyon Kullanmı</a>
+  <a href="js-thirteen.html" class="w3-bar-item w3-button">Nesne Modelleme ve Kullanım</a>
+  <a href="js-fourteen.html" class="w3-bar-item w3-button">DOM</a><a href="hw2examples/adamasmaca.html" class="w3-bar-item w3-button">U-1 ADAMASMACA</a>
+  <a href="hw2examples/alisverisSayfasi.html" class="w3-bar-item w3-button">U-2 SHOPPİNG</a>
+  <a href="hw2examples/form.html" class="w3-bar-item w3-button">U-3 FORM</a>       
+</div>
+
+<div class="body">
+<h1 align="center">JavaScript'te Fonksiyonlar</h1>
+<p>Fonksiyonlar bir işlevi yerine getiren kod bloklarıdır. Eğer bir projede birden fazla sayfada ya da yerde çalışmasını istediğimiz kodlar varsa imdadımıza fonksiyonlar yetişir. JavaScript'in nesne tabanlı (object-oriented) bir dil olmasından kaynaklı olarak belirli olayların gerçekleşmesini sağlamak için fonksiyonları kullanabiliriz.</p>
+<p>Fonksiyonlar hazır ve kullanıcı tanımlı olmak üzere iki temel sınıfa ayrılırlar. Diğer bir sınıflama yöntemi ise parametreli ya da parametresiz olmalarıdır. Şimdi parametresiz fonksiyonlarla yavaş yavaş fonksiyonları öğrenmeye başlayalım.</p>
+<h3 align="center">Parametresiz Fonksiyonlar</h3>
+<p>Parametresiz fonksiyonlar adından da anlaşılacağı gibi herhangi bir parametreye gerek duymadan ve fonksiyonda tanımlanan kodların yerine getirilmesi ile çalışan fonksiyonlardır.</p>
+<p><img src="../img/fonkul.png"/></p>
+<p>Şeklinde kodlarımız olsun. Kodu çalıştırdığımızda ilk sayı için bir bilgi penceresi, ilk sayıyı girdikten sonra ise ikinci sayı için bir bilgi penceresi açılacak. İkinci sayıyı girdikten sonra ise sonuç, uyarı penceresi olarak yazdırılacak. parseInt( ) ise prompt fonksiyonu ile alınan string veriyi number veri türüne çevirecek. Unutulmamalıdır ki kullanıcıdan alınan veriler daima string türündedir.</p>
+<p>Diyelim ki bu kodları bu sayfada kullandık. Fakat başka bir sayfada da kullanmak istiyoruz. Bunun için sil baştan üç satır kodu tekrar yazmayız. Fonksiyonumuzu tanımlarız ve kendi oluşturduğumuz js dosyasına yazarız ve js dosyasını da layout'umuza ekleriz. İşler bu şekilde yürüyor.</p>
+<p>Şimdi ilk parametresiz fonksiyonumuzu yazalım.</p>
+<p><img src="../img/fonkul2.png"/></p>
+<p>İşte fonksiyon tanımlamak bu kadar basit. function yazdıktan sonra fonksiyon adımı verdim ve scope alanına çalışmasını istediğim kodları yazdım. Sonrasında da topla() fonksiyonumu çalıştırdım. Fonksiyonumu dahili bir js dosyasında tanımlarsam projemin istediğim sayfasında kullanabilirim.</p>
+<h3 align="center">Parametreli Fonksiyonlar</h3>
+<p>Kod yazarken iki değeri kısa bir şekilde toplamak istiyoruz diyelim. Ve bu kodları başka sayfalarda da kullanacağız. Bunun için aşağıdaki gibi parametreli bir fonksiyon tanımlamamız yeterlidir.</p>
+<p><img src="../img/fonkul3.png"/></p>
+<p>ilkSayi ve ikinciSayi şeklinde iki parametresi olan topla isimli bir fonksiyon tanımladım. Number( ) fonksiyonu ile bu iki parametreyi number veri türüne çevirdim. Kodlarımı çalıştırdığım zaman "9" yanıtını alacağım.</p>
+<p><img src="../img/fonkul4.png"/></p>
+<p>Bu kodları daha kısa bir şekilde de yazabilirim. Sadece Number( ) fonksiyonunu öğrenmeniz amacıyla ilk örneği verdim.</p>
+<h3 align="center">return Deyimi</h3>
+<p>Bazen kodlarımızda çalışmasını istemediğimiz alanlar olabilir. Hatırlarsanız bir önceki dersimizde continue deyimini kullanmıştık. continue'da çalışmasını istemediğimiz kodlar çalışmaz; fakat geri kalan kodlar çalışır. return'de ise kodların çalışmasını istemediğimiz kısmına gelindiğinde fonksiyondan çıkılır ve altındaki kodları çalıştırmaz. Aralarında böyle bir fark vardır.</p>
+<p><img src="../img/fonkul5.png"/></p>
+<p>Fark hesabı yapan bir fonksiyon yazdım. Eğer ilk değer, ikinci değerden küçükse fonksiyondan çıkacağım. Değilse sonu yazdıracağım.</p>
+<p><img src="../img/fonkul6.png"/></p>
+<p>Bu fonksiyonu bu şekilde bir uyarıyla da yazabilirsiniz.</p>
+<h3 align="center">Hazır Fonksiyonlar</h3>
+<p>Bu dersimize kadar write( ), alert( ), prompt( ), sup( ), concat( ) gibi birçok hazır fonksiyon gördük. Hazır fonksiyonlar kod yazımında kolaylık sağlayan JavaScript ile hazır gelen fonksiyon gruplarıdır. Şimdi birkaç tanesini daha öğrenelim.</p>
+<p>eval( ): Değişkenin türünü algılayıp dönüştürme (convert) işlemi yapar.</p>
+<p><img src="../img/fonkul7.png"/></p>
+<p>a değişkenim number, b değişkenim ise string veri türünde. eval( ) fonksiyonu ile iki değeri topladığımda "20" yanıtını aldım. eval( ), b değişkeninin bir string olduğunu anladı ve onu number veri türüne çevirdi. Eğer eval( ) kullanmasaydım "128" yanıtını alacaktım ve sadece string birleştirme yapmış olacaktı.</p>
+<p>parseInt( ) ve parseFloat: parseInt( ) veriyi integer türüne yani tamsayı türüne dönüştürür. parseFloat( ) ise ondalıklı sayıya dönüştürme işlemi yapar.</p>
+<p>String( ) ve Number( ): String( ) veriyi string türüne, Number( ) ise number türüne dönüştürür.</p>
+<p>&nbsp;</p>
+</div>
+
+<div class="footer_area">
+		<a href="https://www.camttdev.co/"><div class="footer_area">
+			<p>Create by Ahmet 2019-2020 - Turkey - www.amttdev.co</p>
+		</a>
+	</div>
+
+<body>
+</body>
+</html>

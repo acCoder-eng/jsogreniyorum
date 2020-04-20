@@ -1,0 +1,53 @@
+.box {
+    display: block;
+    width: 101px;
+    height: 92px;
+    margin-bottom: 10px;
+}
+.step1 {
+    background: url("../img/image.png") no-repeat -25px 0px;
+}
+.step2 {
+    background: url("../img/image.png") no-repeat -380px 0px;
+}
+.step3 {
+    background: url("i../img/image.png") no-repeat -490px 0px;
+}
+.step4 {
+    background: url("../img/image.png") no-repeat -30px -160px;
+}
+.step5 {
+    background: url("../img/image.png") no-repeat -160px -160px;
+}
+.step6 {
+    background: url("../img/image.png") no-repeat -280px -160px;
+}
+.step7 {
+    background: url("../img/image.png") no-repeat -390px -160px;
+}
+.step8 {
+    background: url("../img/image.png") no-repeat -500px -160px;;
+}
+.step9 {
+    background: url("../img/image.png") no-repeat -280px -320px;
+}
+.kelime_alani {
+    border: 1px solid #000;
+    display: flex;
+    width: fit-content;
+}
+.kelime {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+.kelime:last-child {
+    border-right: none;
+}
+.harfler_alani {
+    border: 1px solid #000;
+    display: flex;
+    margin: 10px;
+    width: 400px;
+    flex-wrap: wrap;
+}

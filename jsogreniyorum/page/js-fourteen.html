@@ -1,0 +1,123 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/set.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Başlıksız Belge</title>
+</head>
+<div class="dropdwn">
+<nav>
+	<ul>
+    	<li><a href="../css.html">Css</a></li>
+        <li><a href="#">Tutorial <i class="fa fa-caret-down"></i> </a>
+        	<ul>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Asp.Net</a></li>
+            <li><a href="../index.html">JavaScript</a></li>
+            </ul>
+            </li>
+         <li><a href="#">Web Desing<i class="fa fa-caret-down"></i></a>
+         		<ul>
+                <li><a href="#">Front End</a></li>
+           		<li><a href="#">Back End</a></li>
+          		<li><a href="#">Others <i style="transform:rotate(-90deg);" class="fa fa-caret-down"></i> </a>
+                <ul>
+                	<li><a href="#">Links</a></li>
+           			<li><a href="#">Works</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+                </li>
+            </ul>    
+         </li> 
+         	<li><a href="#">Content</a></li>
+           	<li><a href="#">FeedBack</a></li>
+   </ul>
+   
+    </nav>
+</div>
+
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
+  <h3 class="w3-bar-item">JavaScript</h3>
+  <a href="js-one.html" class="w3-bar-item w3-button">JavaScript'e Giris</a>
+   <a href="js-two.html" class="w3-bar-item w3-button">JavaScript Syntax Yapısı</a>
+    <a href="js-three.html" class="w3-bar-item w3-button">Değişkenler</a>
+     <a href="js-four.html" class="w3-bar-item w3-button">Operatörler</a>
+       <a href="js-five.html" class="w3-bar-item w3-button">Veri Tipleri</a>
+        <a href="js-six.html" class="w3-bar-item w3-button">Fonksiyon Yapısı</a>
+         <a href="js-seven.html" class="w3-bar-item w3-button">Olaylar</a>
+          <a href="js-eight.html" class="w3-bar-item w3-button">Koşul Yapısı</a>
+       <a href="js-nine.html" class="w3-bar-item w3-button">Döngüler</a>
+        <a href="js-ten.html" class="w3-bar-item w3-button">Tip Dönüşümleri</a>
+         <a href="js-eleven.html" class="w3-bar-item w3-button">Çalışma Yapısı ve Mimari</a>    
+  <a href="js-twelve.html" class="w3-bar-item w3-button">Fonksiyon Kullanmı</a>
+  <a href="js-thirteen.html" class="w3-bar-item w3-button">Nesne Modelleme ve Kullanım</a>
+  <a href="js-fourteen.html" class="w3-bar-item w3-button">DOM</a><a href="hw2examples/adamasmaca.html" class="w3-bar-item w3-button">U-1 ADAMASMACA</a>
+  <a href="hw2examples/alisverisSayfasi.html" class="w3-bar-item w3-button">U-2 SHOPPİNG</a>
+  <a href="hw2examples/form.html" class="w3-bar-item w3-button">U-3 FORM</a>       
+</div>
+
+<div class="body">
+<h1 align="center">Document Nesnesi</h1>
+<p>JavaScript ile web sayfamızdaki etiketlerin ve form elemanlarının içeriklerine-değerlerine ulaşmak, bunlarla işlem yapmak ve değiştirmek isteyebiliriz.</p>
+<p>Özellikle form elemanlarına ziyaretçiler tarafından girilen bilgilere ulaşmaya sıkça ihtiyaç duyarız.</p>
+<p>JavaScript'te çeşitli metotlar kullanarak html etiketlerinin içerik ve özelliklerine ulaşabilir ve istersek bu özellikleri değiştirebiliriz.</p>
+<p>Bu metotlardan bazıları şunlardır.</p>
+<h2 align="center">getElementById Metodu</h2>
+<p>Web sayfasındaki html etiketlerine ulaşmak için en çok kullanılan metotlardan biridir. Ulaşılmak istenen html nesnesinin id'si belirtilerek, ilgili elemana ulaşmamızı sağlar.</p>
+<p>Örneğin k1 isimli metin kutusunun içindeki değere şu şekilde ulaşabiliriz:</p>
+<p><img src="../img/doc1.png"/></p>
+<p>Benzer şekilde istenen elemanın stil özellikleri, innerHtml özelliği gibi birçok özelliğine erişilerek değişiklik yapılabilir.</p>
+<h2 align="center">innerHTML Özelliği</h2>
+<p>Body kısmında yer alan bir html etiketinin içeriğini değiştirmemizi sağlar. </p>
+<p>Örnek: Sayfamızda id'si "sonuc" olan bir p etiketi bulunsun. Bu etiket içerisine birşeyler yazdırmak istersek şu satırı kullanabiliriz:</p>
+<p><img src="../img/doc2.png"/></p>
+<p>innerHTML özelliği ile sayfanın istenen yerine Html kodları da ekleyebilriz.</p>	
+<p><img src="../img/doc3.png"/></p>
+<p>JavaScript ile sayfaya html kodları eklerken, tırnak işaretlerini karıştırırsak sorun yaşarız. Bu nedenle çift tırnak içerisinde tekrar tırnak işareti kullanmamız gerekirse, içteki tırnak işaretlerini tek tırnak olarak yazmalıyız.</p>
+<p>Hatırlatma: JavaScript büyük küçük harfe duyarlı bir dildir. Ayrıca html'de olduğu gibi komut satırlarını yazarken her istediğimiz yerde alt satıra geçemeyiz. JavaScript komut satırları nokta (.) ve eşittir (=) gibi karakterlerden sonra bölünebilmekteyken, komutlar, tırnak içleri ve benzeri ifadeler bölünerek alta geçilmemelidir.</p>
+<p>Örnek:</p>
+<p><img src="../img/doc4.png"/></p>
+<h2 align="center">getElementsByClassName Metodu</h2>
+<p>Id özelliği her etiket için farklı olması gereken bir özelliktir. Bu durumda getElementById metodu ile aynı anda birden fazla elemana ulaşmamız mümkün değildir.</p>
+<p>Class özelliği ise sayfada bir çok etikete uygulanmış olabilir. Sayfada aynı class'ın uygulandığı tüm elemanlar ile işlem yapmak istersek getElementsByClassName metodunu kullanabiliriz.</p>
+<p>Bu metotta parantez içinde aradığımız class adı yazılır, devamında ise köşeli parantez içerisinde o class'a sahip elemanlar içindeki kaçıncı elemana ulaşacağımız belirtilir.</p>
+<p>Örneğin;</p>
+<p><img src="../img/doc5.png"/></p>
+<p>Yukarıdaki satırda .yazi class'ı uygulanmış ilk elemana ulaşılacaktır. İndex numaraları her zaman 0'dan başlar.</p>
+<p>Sayfada aynı class'ın uygulandığı tüm elemanlara ulaşmak ve işlem yapmak istersek bir döngü kullanabiliriz.</p>
+<p>Örnek: Aşağıdaki örnekte .yazi class'ı uygulanmış tüm elemanların metin rengi değiştirilmiştir.</p>
+<p><img src="../img/doc6.png"/></p>
+<h2 align="center">getElementsByName Metodu</h2>
+<p>ayet id'ye göre değil de name özelliğine göre bir html nesnesine ulaşmak istersek getElementsByName metodunu kullanabiliriz. Kullanımı bir üstte anlatılan getElementsByClassName metoduna benzer. Ulaşılmak istenilen elemanın index numarasının da belirtilmesi gerekir.</p>
+<p>Örnek:</p>
+<p><img src="../img/doc7.png"/></p>
+<p>Köşeli parantez içinde belirttiğimiz index numarası, o sayfada belirttiğimiz name özelliğine sahip elemanlardan kaçıncı sıradakinin alınacağını belirtmiş olur. İndeks numarası 0'dan başlar.</p>
+<p>Bu örnekte name özelliği "kutu" olan ilk html elemanına ulaşılacaktır.</p>
+<h2 align="center">Form ve Nesne Adları Kullanılarak Form Elemanlarının Değerine Ulaşma</h2>
+<p>Sayfamızdaki html formu içindeki elemanların değerlerine şu şekilde de ulaşabiliriz.</p>
+<p>Örnek:</p>
+<p>Aşağıdaki gibi bir html formumuz olsun:</p>
+<p><img src="../img/doc8.png"/></p>
+<p>Formun adı form1, ulaşmak istediğimiz metin kutusunun adı ise kutu1 olduğu için;</p>
+<p><img src="../img/doc9.png"/></p>
+<p>şeklinde kutunun değerine ulaşabiliriz.</p>
+<h2 align="center">Write Metodu</h2>
+<p>Sayfaya metin ya da Html kodlarını sayfaya yazdırmamızı sağlar.</p>
+<p><img src="../img/doc10.png"/></p>
+<p>&nbsp</p>
+</div>
+
+<div class="footer_area">
+		<a href="https://www.camttdev.co/"><div class="footer_area">
+			<p>Create by Ahmet 2019-2020 - Turkey - www.amttdev.co</p>
+		</a>
+	</div>
+
+<body>
+</body>
+</html>

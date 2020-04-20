@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../../css/form.css" type="text/css" rel="stylesheet"/>
+<title>Başlıksız Belge</title>
+</head>
+
+<body>
+<script src="../../js/forum.js"></script>
+<div id="uyelik_formu">
+    <form name="uye_formu" method="post">
+        <label>Kullanıcı Adı:</label>
+        <input type="text" name="kadi">
+        <br>
+        <label>tcNo:</label>
+        <input type="text" name="tcno" maxlength="11">
+        <br>
+        <label>cepNo:</label>
+        <input type="text" name="cepno" maxlength="11">
+        <br>
+        <label>E-Mail:</label>
+        <input type="text" name="email">
+        <br>
+        <label>sifre:</label>
+        <input type="password" name="sifre">
+        <br>
+        <input type="submit" value="Kaydet!">
+    </form>
+</div>
+</body>
+<script>
+var formGiris = document.forms["uye_formu"];
+var kad = formGiris.kadi;
+var tcno = formGiris.tcno;
+var cepno = formGiris.cepno;
+var email = formGiris.email;
+var pass = formGiris["sifre"];
+submitOK = true;
+formGiris.onsubmit = function(e){
+    e.preventDefault();
+	if(kad.value == "" || tcno.value == "" || cepno.value == "" ||email.value == "" || pass.value == ""){
+		alert("Tüm Alanları Doldurmak Zorundasınız.");
+		submitOK = false;
+	}
+		if(tcno.value.length > 11){
+			alert("TC numarası max 11 karakteri geçmemeli");
+		}
+			submitOK = false;
+		 if(tcno.value.length < 11){
+				alert("tc numarası 11 karakterterden az olamaz");
+				submitOK = false;
+			}
+		if (isNaN(tcno.value)) {
+        alert("sayi olmalidir");
+    }
+	if(cepno.value.length <11){
+		alert("cep numaranızı Basında Sıfır Olmadan 11 Hane olacak Sekilde Giriniz");
+	}
+	
+		if(isNaN(cepno.value)){
+			alert("cep numarası String veya Özel karakter Kullanmayınız...");
+		}
+
+}
+ 
+</script>
+
+</html>
